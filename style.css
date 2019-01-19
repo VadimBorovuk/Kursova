@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+    background: #bababa;
+}
+
+#content {
+    padding: 50px 50px 0 50px;
+    background: #fff;
+    width: 50%;
+    height: 1000px;
+
+}
+
+.header h2 {
+    font-weight: bold;
+}
+
+#info {
+    padding-top: 10px;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#image {
+
+    display: block;
+    text-align: center;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 20px;
+    height: 300px;
+    width: 100%;
+}
+
+
+#infoBtn {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.addLike {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    height: 35px;
+    width: 90px;
+    background: rgba(237, 21, 21, 0.5);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.btnLikes a {
+    font-size: 25px;
+    color: red;
+    padding: 5px 10px 0 10px;
+}
+
+#lenghCom{
+    padding-top: 20px; 
+    padding-left: 260px;
+    color: #000;
+}
+
+
+.btnLikes input {
+    background: rgba(237, 21, 21, 0);
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.addNewComment {
+    background: rgba(0, 185, 247, 0.6);
+    margin-top: 10px;
+    height: 35px;
+    width: 150px;
+
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*.btnComment input {
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+    color: #fff;
+    width: 150px;
+    background: rgba(0, 185, 247, 0);
+    text-align: center;
+    cursor: pointer;
+}*/
+.commentsForm {
+    display: none;
+}
+
+#constructor {
+    margin-left: 12px;
+    background: #fff;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+#constructor #header {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#authorName {
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+#authorName #authorText {
+    margin-left: 20px;
+    height: 30px;
+    width: 400px;
+}
+
+#postText {
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#postText #post {
+    background: #bababa;
+    margin-left: 7px;
+    height: 120px;
+    width: 400px;
+}
+
+#imageUrl {
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* FORM */
+form {
+    max-width: 400px;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 25px;
+}
+
+form label:last-child {
+    margin-bottom: 0;
+}
+
+form label span {
+    display: block;
+}
+
+form label input,
+form label textarea {
+    display: block;
+    width: -webkit-fill-available;
+    max-width: 400px;
+    padding: 10px 20px;
+    background: #bababa;
+    border: none;
+    border-radius: 2px;
+}
+
+/* Form buttons */
+form button {
+    height: auto;
+    width: 100%;
+    padding: 10px 40px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form button#createPost {
+    background: rgb(18, 255, 36);
+}
+
+form button#clearStorage {
+    background: rgb(247, 47, 15);
+}
+
+/* Content */
+#content .post {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 25px;
+    background: rgba(206, 206, 206,0.3);
+    position: relative;
+}
+
+#content .post .removeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    color: rgb(247, 47, 15);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.commentsForm{
+   
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+.commentsForm .commentAvtor{
+    height: 35px;
+    background: #bababa;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 7px;
+}
+
+.commentsForm .commentMessage{
+    height: 80px;
+    background: #bababa;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 7px;
+}
+
+.commentsForm .addComment{
+    height: 35px;
+    background: #ffd800;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 19px;
+    cursor: pointer;
+}
